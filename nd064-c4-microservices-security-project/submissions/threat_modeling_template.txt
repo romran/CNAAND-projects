@@ -1,0 +1,21 @@
+Docker Threat Modeling
+Given Docker's system components and the STRIDE framework, identify five potential threats that may arise.
+- Spoofing - Client traffic from the Docker client to the Docker daemon or registry could be spoofed, or intercepted by a malicious party and replayed.
+- Tampering - Daemon configuration may be tampered with by a compromised client, leading to misconfiguration.
+- Information Disclosure - The Docker host file system may be misconfigured, exposing sensitive information and leading to insecure defaults
+- Denial of Service - Docker distribution may not properly restrict the amount of content accepted by a user. 
+- Elevation of Privilege - Container image permissions may be elevated using the --privilege flag. Image libraries may contain security flaws. This can affect image security.
+
+Kubernetes Threat Modeling
+Given Kubernetes' system components and the STRIDE framework, identify five potential threats that may arise.
+- Spoofing - Calls to the API server could be spoofed by a malicious caller.
+- Tampering - The configuration of etcd may be tampered with by an attacker, modifying vital system-level configurations such as pod specs.
+- Repudiation - Unauthorized changes can be made to kubelet.
+- Denial of Service - Kubelet can be subject to denial of service. 
+- Elevation of Privilege - privilege can be abused by using the privileged flag.
+
+Docker-bench Run Results and Analysis
+From the failed findings, select and document 3 findings from the Docker-bench results that you want to harden based on the 5 attack surface areas you identified in Step 1. At least 1 of the 3 hardened findings should be different from the ones mentioned in the exercise (i.e. 5.10, 5.14, and 5.22).
+- 2.14.b Disable Userland Proxy (Scored)
+- 2.2.b Ensure the logging level is set to 'info' (Scored)
+- 4.5 Ensure Content trust for Docker is Enabled (Scored)

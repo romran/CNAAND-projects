@@ -1,0 +1,61 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: trial
+  annotations:
+    prometheus.io/scrape: true
+    prometheus.io/path: /metrics
+    prometheus.io/port: 9090
+  labels:
+    app: trial
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: trial
+  template:
+    metadata:
+      labels:
+        app: trial
+    spec:
+      containers:
+      - name: trial
+        image: romran/nd064-c3-trial:latest
+        ports:
+        - name: trialport
+          containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: trial-service
+  labels:
+    app: trial
+spec:
+  selector:
+    app: trial
+  ports:
+    - name: trial
+      port: 8083
+      targetPort: 8080 
+  type: LoadBalancer
+---
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: trial
+  namespace: monitoring
+  labels:
+    app: trial
+    release: prometheus
+spec:
+  selector:
+    matchLabels:
+      release: prometheus
+  endpoints:
+  - port: trial
+    path: /metrics
+    interval: 60s
+  namespaceSelector:
+    matchNames:
+    - default

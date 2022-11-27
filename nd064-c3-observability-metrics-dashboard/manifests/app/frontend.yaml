@@ -1,0 +1,62 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  annotations:
+    prometheus.io/scrape: true
+    prometheus.io/path: /metrics
+    prometheus.io/port: 9090
+  labels:
+    app: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+      - name: frontend
+        imagePullPolicy: Always
+        image: romran/nd064-c3-frontend:latest
+        ports:
+        - name: frontendport
+          containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-service
+  labels:
+    app: frontend
+spec:
+  selector:
+    app: frontend
+  ports:
+    - name: frontend
+      port: 8082
+      targetPort: 8080 
+  type: LoadBalancer
+---
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: frontend
+  namespace: monitoring
+  labels:
+    app: frontend
+    release: prometheus
+spec:
+  selector:
+    matchLabels:
+      app: frontend
+  endpoints:
+  - port: frontend
+    path: /metrics
+    interval: 60s
+  namespaceSelector:
+    matchNames:
+    - default

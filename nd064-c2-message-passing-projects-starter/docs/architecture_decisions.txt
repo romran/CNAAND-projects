@@ -1,0 +1,13 @@
+The POC application was enhanced into a minimum viable product to handle the large volume
+of location data by adding two location modules that combine Kafka and gRPC message passing techniques. 
+
+Firstly, acquired location data from clients are send by gRPC messages to Kafka producer
+defined in location-producer-grpc-kafka module and connected to Kafka broker. 
+
+Secondly, Kafka broker directs location data to Kafka consumer defined in location-consumer-module
+and finally saves data into location table. 
+
+Clients request data via frontend module using RESTful API calls for person and connection endpoints.
+Considering simple functionality and lack of business logic there is no need to split api module into
+microservices, but with added location modules is possible to scale acquisition of location data. 
+

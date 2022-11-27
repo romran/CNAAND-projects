@@ -1,0 +1,6 @@
+1. Incident commander name: Romualdas Randamanskas
+2. Executive Summary of what happened: There was detected unexpected CPU activity in Grafana dashboard. Further investigation showed extraneous pods running crypto mining pods called "minergate" and "moneropool".
+3. Summary of what was affected: Additional crypto mining pods created additional CPU load that could throttle application cluster and increase maintenance cost.
+4. Summary of the impact: Application cluster got security weakness where outside actors could create crypto mining pods and drag down application performance.
+5. Summary of the remediation steps: Detected crypto mining pods where deleted by system admin. Access to kubectl commands was restricted only to admin accounts.
+6. Summary of lessons learned: Shortlist people who could run kubectl commands. Implement automatic notification for unknown pods created. 

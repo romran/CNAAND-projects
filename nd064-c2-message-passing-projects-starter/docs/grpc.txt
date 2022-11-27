@@ -1,0 +1,10 @@
+The gRPC request is defined in location.proto and reflects location data structure.
+
+message LocationMessage {
+    int64 id = 1; 
+    int64 person_id = 2;
+    string coordinate = 3;
+    string creation_time = 4;
+}
+
+Run writer.py file from location-producer-grpc-kafka module to test gRPC request.

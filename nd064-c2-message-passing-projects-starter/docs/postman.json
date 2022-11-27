@@ -1,0 +1,532 @@
+{
+	"info": {
+		"_postman_id": "87815376-eec0-4eae-a7d7-1fe2ac05d1f7",
+		"name": "UdaConnect API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "locations",
+					"item": [
+						{
+							"name": "{location id}",
+							"item": [
+								{
+									"name": "get location resource",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/locations/:location_id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"locations",
+												":location_id"
+											],
+											"variable": [
+												{
+													"key": "location_id",
+													"value": "in",
+													"description": "(Required) Unique ID for a given Location"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/locations/:location_id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"locations",
+														":location_id"
+													],
+													"variable": [
+														{
+															"key": "location_id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "post location resource",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/locations/:location_id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"locations",
+												":location_id"
+											],
+											"variable": [
+												{
+													"key": "location_id",
+													"value": "in",
+													"description": "(Required) Unique ID for a given Location"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/locations/:location_id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"locations",
+														":location_id"
+													],
+													"variable": [
+														{
+															"key": "location_id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "get location resource",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/locations?location_id=in",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"locations"
+									],
+									"query": [
+										{
+											"key": "location_id",
+											"value": "in",
+											"description": "Unique ID for a given Location"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/locations?location_id=in",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"locations"
+											],
+											"query": [
+												{
+													"key": "location_id",
+													"value": "in"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "post location resource",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/locations?location_id=in",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"locations"
+									],
+									"query": [
+										{
+											"key": "location_id",
+											"value": "in",
+											"description": "Unique ID for a given Location"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/locations?location_id=in",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"locations"
+											],
+											"query": [
+												{
+													"key": "location_id",
+													"value": "in"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "persons",
+					"item": [
+						{
+							"name": "{person id}",
+							"item": [
+								{
+									"name": "get person resource",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/persons/:person_id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"persons",
+												":person_id"
+											],
+											"variable": [
+												{
+													"key": "person_id",
+													"value": "in",
+													"description": "(Required) Unique ID for a given Person"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/persons/:person_id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"persons",
+														":person_id"
+													],
+													"variable": [
+														{
+															"key": "person_id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "get connection data resource",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/persons/:person_id/connection?distance=in&end_date=in&start_date=in",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"persons",
+												":person_id",
+												"connection"
+											],
+											"query": [
+												{
+													"key": "distance",
+													"value": "in",
+													"description": "Proximity to a given user in meters"
+												},
+												{
+													"key": "end_date",
+													"value": "in",
+													"description": "Upper bound of date range"
+												},
+												{
+													"key": "start_date",
+													"value": "in",
+													"description": "Lower bound of date range"
+												}
+											],
+											"variable": [
+												{
+													"key": "person_id",
+													"value": "in",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/persons/:person_id/connection?distance=in&end_date=in&start_date=in",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"persons",
+														":person_id",
+														"connection"
+													],
+													"query": [
+														{
+															"key": "distance",
+															"value": "in"
+														},
+														{
+															"key": "end_date",
+															"value": "in"
+														},
+														{
+															"key": "start_date",
+															"value": "in"
+														}
+													],
+													"variable": [
+														{
+															"key": "person_id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "get persons resource",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/persons",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"persons"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/persons",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"persons"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "post persons resource",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/persons",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"persons"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/persons",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"persons"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string"
+		}
+	]
+}
