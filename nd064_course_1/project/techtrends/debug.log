@@ -1,0 +1,38 @@
+2021-09-02 20:48:24,517 : INFO : werkzeug :  * Restarting with stat
+2021-09-02 20:48:25,013 : WARNING : werkzeug :  * Debugger is active!
+2021-09-02 20:48:25,025 : INFO : werkzeug :  * Debugger PIN: 297-149-076
+2021-09-02 20:48:25,874 : INFO : werkzeug :  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+2021-09-02 20:48:28,042 : INFO : werkzeug : 127.0.0.1 - - [02/Sep/2021 20:48:28] "[37mGET / HTTP/1.1[0m" 200 -
+2021-09-02 20:48:28,112 : INFO : werkzeug : 127.0.0.1 - - [02/Sep/2021 20:48:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-09-02 20:48:28,959 : INFO : app : An existing article "KubeCon + CloudNativeCon 2021" is retrieved
+2021-09-02 20:48:28,963 : INFO : werkzeug : 127.0.0.1 - - [02/Sep/2021 20:48:28] "[37mGET /2 HTTP/1.1[0m" 200 -
+2021-09-02 20:48:34,403 : INFO : werkzeug :  * Detected change in 'C:\\Files\\Udacity cloud\\Projects\\nd064_course_1\\project\\techtrends\\app.py', reloading
+2021-09-02 20:48:34,447 : INFO : werkzeug :  * Restarting with stat
+2021-09-02 20:48:34,958 : WARNING : werkzeug :  * Debugger is active!
+2021-09-02 20:48:34,967 : INFO : werkzeug :  * Debugger PIN: 297-149-076
+2021-09-02 20:48:35,840 : INFO : werkzeug :  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+2021-09-02 20:48:40,145 : INFO : werkzeug :  * Detected change in 'C:\\Files\\Udacity cloud\\Projects\\nd064_course_1\\project\\techtrends\\app.py', reloading
+2021-09-02 20:48:40,178 : INFO : werkzeug :  * Restarting with stat
+2021-09-02 20:48:40,716 : WARNING : werkzeug :  * Debugger is active!
+2021-09-02 20:48:40,725 : INFO : werkzeug :  * Debugger PIN: 297-149-076
+2021-09-02 20:48:41,581 : INFO : werkzeug :  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+2021-09-02 20:48:54,222 : INFO : werkzeug :  * Detected change in 'C:\\Files\\Udacity cloud\\Projects\\nd064_course_1\\project\\techtrends\\app.py', reloading
+2021-09-02 20:48:54,258 : INFO : werkzeug :  * Restarting with stat
+2021-09-02 20:48:54,756 : WARNING : werkzeug :  * Debugger is active!
+2021-09-02 20:48:54,764 : INFO : werkzeug :  * Debugger PIN: 297-149-076
+2021-09-02 20:48:55,622 : INFO : werkzeug :  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+2021-09-02 20:49:14,400 : INFO : werkzeug :  * Detected change in 'C:\\Files\\Udacity cloud\\Projects\\nd064_course_1\\project\\techtrends\\app.py', reloading
+2021-09-02 20:49:14,430 : INFO : werkzeug :  * Restarting with stat
+2021-09-02 20:49:15,049 : WARNING : werkzeug :  * Debugger is active!
+2021-09-02 20:49:15,057 : INFO : werkzeug :  * Debugger PIN: 297-149-076
+2021-09-02 20:49:15,930 : INFO : werkzeug :  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+2021-09-02 20:49:32,723 : INFO : werkzeug :  * Detected change in 'C:\\Files\\Udacity cloud\\Projects\\nd064_course_1\\project\\techtrends\\app.py', reloading
+2021-09-02 20:49:32,768 : INFO : werkzeug :  * Restarting with stat
+2021-09-02 20:49:33,271 : WARNING : werkzeug :  * Debugger is active!
+2021-09-02 20:49:33,280 : INFO : werkzeug :  * Debugger PIN: 297-149-076
+2021-09-02 20:49:34,141 : INFO : werkzeug :  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+2021-09-02 20:49:46,824 : INFO : werkzeug :  * Detected change in 'C:\\Files\\Udacity cloud\\Projects\\nd064_course_1\\project\\techtrends\\app.py', reloading
+2021-09-02 20:49:46,853 : INFO : werkzeug :  * Restarting with stat
+2021-09-02 20:49:47,352 : WARNING : werkzeug :  * Debugger is active!
+2021-09-02 20:49:47,360 : INFO : werkzeug :  * Debugger PIN: 297-149-076
+2021-09-02 20:49:48,228 : INFO : werkzeug :  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)

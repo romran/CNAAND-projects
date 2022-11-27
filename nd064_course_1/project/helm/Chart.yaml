@@ -1,0 +1,8 @@
+apiVersion: v1
+name: techtrends
+description: TechTrends is an online website used as a news sharing platform, that enables consumers to access the latest news within the cloud-native ecosystem.
+keywords:
+  - techTrends
+version: 1.0.0
+maintainer:
+  - name: Romualdas Randamanskas
